@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ultah bu guruuu</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap');
+
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #f8b195 0%, #f67280 50%, #c06c84 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px 50px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  h1 {
+    
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+
+  button {
+    background-color: #fff3f3;
+    color: #c06c84;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  button:hover {
+    background-color: #f67280;
+    color: #fff;
+  }
+
+  .special-note {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  }
+
+  .birthday-photo {
+    margin: 20px auto 40px auto;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+  }
+
+  .photo-text-section {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    gap: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photo-text-section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .section-photo {
+    flex: 1 1 40%;
+    max-width: 40%;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    object-fit: cover;
+  }
+
+  .section-text {
+    flex: 1 1 60%;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: left;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0,0,0,0.5);
+  }
+
+  @media (max-width: 600px) {
+    .photo-text-section,
+    .photo-text-section:nth-child(even) {
+      flex-direction: column !important;
+    }
+
+    .section-photo,
+    .section-text {
+      max-width: 100%;
+      text-align: center;
+    }
+    .section-text {
+      margin-top: 12px;
+    }
+  }
+
+  /* Confetti Canvas */
+  #confetti-canvas {
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+  }
+</style>
+</head>
+<body>
+  <canvas id="confetti-canvas"></canvas>
+  <div class="container">
+    <h1>Happy Birthday, sayangku Intan Nurkhaliza, S.Pd</h1>
+    
+    <img
+      src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80"
+      alt="Birthday celebration"
+      class="birthday-photo"
+    />
+
+    <h2>To my Dearest Girlfriend</h2>
+    <p>Today we celebrate the most amazing person in my life. Your smile lights up every room and your kindness touches every heart. Wishing you a day full of joy, love, and unforgettable memories!</p>
+    
+    <div id="photo-text-container">
+      <div class="photo-text-section">
+        <img
+          src="IMG-20241022-WA0050.jpg"
+          alt="bubub miring"
+          class="section-photo"
+        />
+        <div class="section-text">
+          <p>Ini pap pertama bubub ke aku xixixi, yang katanya harus miring padahal bubub aja udah miring, eh nggak deh.</p>
+        </div>
+      </div>
+      <div class="photo-text-section">
+        <img
+          src="20241126_133444.jpg"
+          alt="bubub sayangku"
+          class="section-photo"
+        />
+        <div class="section-text">
+          <p>Your smile is my favorite sight – brighter than any birthday cake candles! , dan bubub ternyata dua tahun lebih tua dari aku :O</p>
+        </div>
+      </div>
+      <div class="photo-text-section">
+        <img
+          src="FB_IMG_1732967106877.jpg"
+          alt="bubub"
+          class="section-photo"
+        />
+        <div class="section-text">
+          <p>Padahal dulu masih kecil seperti bayi ( sekarang juga masih seperti bayi )</p>
+        </div>
+      </div>
+      <div class="photo-text-section">
+        <img
+          src="EggMlh8UYAAoXWc.jpeg"
+          alt="bubub sayangku"
+          class="section-photo"
+        />
+        <div class="section-text">
+          <p>terus bertumbuh menjadi kakak intan yang sudah mulai dewasa</p>
+        </div>
+      </div>
+      <div class="photo-text-section">
+        <img
+          src="IMG-20250430-WA0008.jpg"
+          alt="bubub"
+          class="section-photo"
+        />
+        <div class="section-text">
+          <p>Hingga sekarang sudah menjadi ibu guru sesuai dengan cita cita bubub </p>
+        </div>
+      </div>
+    </div>
+
+    <button id="reveal-btn">Reveal Your Special Note 🎁</button>
+    <p class="special-note" id="special-note">You are my sunshine on rainy days, my confidant, my best friend. I love you more than words can say. Happy Birthday, darling! 💖</p>
+  </div>
+
+  <script>
+    // Reveal special note on button click
+    const btn = document.getElementById('reveal-btn');
+    const note = document.getElementById('special-note');
+
+    btn.addEventListener('click', () => {
+      if (note.style.display === 'none' || note.style.display === '') {
+        note.style.display = 'block';
+        btn.textContent = 'Hide Special Note ✨';
+      } else {
+        note.style.display = 'none';
+        btn.textContent = 'Reveal Your Special Note 🎁';
+      }
+    });
+
+    // Confetti animation for celebration
+    const canvas = document.getElementById('confetti-canvas');
+    const ctx = canvas.getContext('2d');
+    const confettiCount = 150;
+    const confetti = [];
+
+    function randomRange(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    function ConfettiPiece() {
+      this.x = randomRange(0, window.innerWidth);
+      this.y = randomRange(-window.innerHeight, 0);
+      this.size = randomRange(5, 10);
+      this.speed = randomRange(1, 3);
+      this.radius = randomRange(0, 360);
+      this.color = `hsl(${randomRange(0, 360)}, 70%, 60%)`;
+      this.rotationSpeed = randomRange(2, 5);
+      this.opacity = randomRange(0.6, 1);
+    }
+
+    ConfettiPiece.prototype.update = function() {
+      this.y += this.speed;
+      this.radius += this.rotationSpeed;
+      if (this.y > window.innerHeight) {
+        this.y = randomRange(-20, 0);
+        this.x = randomRange(0, window.innerWidth);
+        this.speed = randomRange(1, 3);
+        this.color = `hsl(${randomRange(0, 360)}, 70%, 60%)`;
+        this.opacity = randomRange(0.6, 1);
+      }
+    };
+
+    ConfettiPiece.prototype.draw = function() {
+      ctx.save();
+      ctx.translate(this.x, this.y);
+      ctx.rotate((this.radius * Math.PI) / 180);
+      ctx.fillStyle = this.color;
+      ctx.globalAlpha = this.opacity;
+      ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size);
+      ctx.restore();
+    };
+
+    function createConfetti() {
+      for (let i = 0; i < confettiCount; i++) {
+        confetti.push(new ConfettiPiece());
+      }
+    }
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    function animateConfetti() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      confetti.forEach(piece => {
+        piece.update();
+        piece.draw();
+      });
+      requestAnimationFrame(animateConfetti);
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+
+    resizeCanvas();
+    createConfetti();
+    animateConfetti();
+  </script>
+</body>
+</html>
+
+```
+
